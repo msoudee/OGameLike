@@ -2,8 +2,8 @@
 
 namespace OGameLikeBO
 {
-    public abstract class IDbEntity
+    public interface IDbEntity
     {
-        public long Id { get; }
+        long? Id { get; }
     }
 }

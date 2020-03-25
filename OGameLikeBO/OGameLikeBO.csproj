@@ -49,9 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Batiment.cs" />
-    <Compile Include="GenerateurRessources.cs" />
+    <Compile Include="GenerateurDAcier.cs" />
+    <Compile Include="GenerateurDUranium.cs" />
+    <Compile Include="GenerateurDOxygene.cs" />
+    <Compile Include="GenerateurDEnergie.cs" />
+    <Compile Include="GenerateurDeRessources.cs" />
     <Compile Include="IDbEntity.cs" />
     <Compile Include="FunctionBuilding.cs" />
+    <Compile Include="TypeRessource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Planete.cs" />
     <Compile Include="Ressource.cs" />

@@ -126,11 +126,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\BatimentsController.cs" />
+    <Compile Include="Controllers\AdministrationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\PlanetesController.cs" />
-    <Compile Include="Controllers\RessourcesController.cs" />
-    <Compile Include="Controllers\SystemeSolairesController.cs" />
     <Compile Include="Data\Context.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,6 +141,8 @@
       <DependentUpon>202003250905188_premiere.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\UniversViewModel.cs" />
+    <Compile Include="Models\SystemeSolaireViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -182,30 +181,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\SystemeSolaires\Create.cshtml" />
-    <Content Include="Views\SystemeSolaires\Delete.cshtml" />
-    <Content Include="Views\SystemeSolaires\Details.cshtml" />
-    <Content Include="Views\SystemeSolaires\Edit.cshtml" />
-    <Content Include="Views\SystemeSolaires\Index.cshtml" />
-    <Content Include="Views\Planetes\Create.cshtml" />
-    <Content Include="Views\Planetes\Delete.cshtml" />
-    <Content Include="Views\Planetes\Details.cshtml" />
-    <Content Include="Views\Planetes\Edit.cshtml" />
-    <Content Include="Views\Planetes\Index.cshtml" />
-    <Content Include="Views\Ressources\Create.cshtml" />
-    <Content Include="Views\Ressources\Delete.cshtml" />
-    <Content Include="Views\Ressources\Details.cshtml" />
-    <Content Include="Views\Ressources\Edit.cshtml" />
-    <Content Include="Views\Ressources\Index.cshtml" />
-    <Content Include="Views\Batiments\Create.cshtml" />
-    <Content Include="Views\Batiments\Delete.cshtml" />
-    <Content Include="Views\Batiments\Details.cshtml" />
-    <Content Include="Views\Batiments\Edit.cshtml" />
-    <Content Include="Views\Batiments\Index.cshtml" />
+    <Content Include="Views\Administration\Home.cshtml" />
+    <Content Include="Views\Administration\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

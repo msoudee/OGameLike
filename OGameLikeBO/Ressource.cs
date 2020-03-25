@@ -5,6 +5,8 @@ namespace OGameLikeBO
 {
     public class Ressource : IDbEntity
     {
+        public long? Id => throw new NotImplementedException();
+
         private string nom;
 
         [StringLength(20, MinimumLength = 5)]

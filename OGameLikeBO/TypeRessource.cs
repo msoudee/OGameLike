@@ -1,6 +1,6 @@
 ﻿namespace OGameLikeBO
 {
-    enum TypeRessource
+    public enum TypeRessource
     {
         ENERGIE,
         OXYGENE,

@@ -1,6 +1,5 @@
 C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\bin\Debug\OGameLikeBO.dll
 C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\bin\Debug\OGameLikeBO.pdb
-C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\obj\Debug\OGameLikeBO.csprojAssemblyReference.cache
 C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\obj\Debug\OGameLikeBO.csproj.CoreCompileInputs.cache
 C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\obj\Debug\OGameLikeBO.dll
 C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\obj\Debug\OGameLikeBO.pdb
@@ -10,3 +9,4 @@ C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\bin\Debug\EntityFramework.Sq
 C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\bin\Debug\EntityFramework.xml
 C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\obj\Debug\OGameLikeBO.csproj.CopyComplete
+C:\Users\Maxence\source\repos\OGameLike\OGameLikeBO\obj\Debug\OGameLikeBO.csprojAssemblyReference.cache
