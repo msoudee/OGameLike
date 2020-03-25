@@ -57,12 +57,12 @@ namespace OGameLikeBO.Batiments.Generateur
 
         private int? calculerCoutNiveauOxygene(int? niv)
         {
-            return ((1 * niv) + (200 * (niv / 10)) + 20);
+            return (niv + (200 * (niv / 10)) + 20);
         }
 
         private int? calculerCoutNiveauAcier(int? niv)
         {
-            return ((1 * niv) + (100 * (niv / 8)) + 20);
+            return (niv + (100 * (niv / 8)) + 20);
         }
 
         private int? calculerCoutNiveauUranium(int? niv)
