@@ -1,7 +1,9 @@
-﻿namespace OGameLikeBO
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace OGameLikeBO
 {
     public abstract class IDbEntity
     {
-        public long Id { get; set; }
+        public long Id { get; }
     }
 }
