@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -120,10 +126,24 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BatimentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PlanetesController.cs" />
+    <Compile Include="Controllers\RessourcesController.cs" />
+    <Compile Include="Controllers\SystemeSolairesController.cs" />
+    <Compile Include="Data\Context.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003250903282_InitialCreate.cs" />
+    <Compile Include="Migrations\202003250903282_InitialCreate.Designer.cs">
+      <DependentUpon>202003250903282_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003250905188_premiere.cs" />
+    <Compile Include="Migrations\202003250905188_premiere.Designer.cs">
+      <DependentUpon>202003250905188_premiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +182,26 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\SystemeSolaires\Create.cshtml" />
+    <Content Include="Views\SystemeSolaires\Delete.cshtml" />
+    <Content Include="Views\SystemeSolaires\Details.cshtml" />
+    <Content Include="Views\SystemeSolaires\Edit.cshtml" />
+    <Content Include="Views\SystemeSolaires\Index.cshtml" />
+    <Content Include="Views\Planetes\Create.cshtml" />
+    <Content Include="Views\Planetes\Delete.cshtml" />
+    <Content Include="Views\Planetes\Details.cshtml" />
+    <Content Include="Views\Planetes\Edit.cshtml" />
+    <Content Include="Views\Planetes\Index.cshtml" />
+    <Content Include="Views\Ressources\Create.cshtml" />
+    <Content Include="Views\Ressources\Delete.cshtml" />
+    <Content Include="Views\Ressources\Details.cshtml" />
+    <Content Include="Views\Ressources\Edit.cshtml" />
+    <Content Include="Views\Ressources\Index.cshtml" />
+    <Content Include="Views\Batiments\Create.cshtml" />
+    <Content Include="Views\Batiments\Delete.cshtml" />
+    <Content Include="Views\Batiments\Details.cshtml" />
+    <Content Include="Views\Batiments\Edit.cshtml" />
+    <Content Include="Views\Batiments\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -179,6 +219,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OGameLikeBO\OGameLikeBO.csproj">
+      <Project>{db4627d0-1c8f-4804-8132-5004e09f36b4}</Project>
+      <Name>OGameLikeBO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202003250903282_InitialCreate.resx">
+      <DependentUpon>202003250903282_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003250905188_premiere.resx">
+      <DependentUpon>202003250905188_premiere.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
